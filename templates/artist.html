@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Artists</title>
+  
+</head>
+<body style="background-color:lightcyan;">
+
+  <center><h1>Artists </h1></center>
+ 
+  <div class="table-container">
+       <div class="table-header">
+      
+    </div>
+
+    <br>
+    <table class="customer-table table table-hover" style="width:100%" border="5">
+      <thead >
+        <tr>
+	  <th><h3>Artist ID</h3></th>
+          <th><h3>Artist Name</h3></th>
+          <th><h3>Address</h3></th>
+          <th><h3>Phone</h3></th>
+          <th><h3>Gallery ID</h3></th>
+        </tr>
+      </thead>
+      <thead>
+      {% for i in range(z) %}
+        <tr>
+          <td><h3>{{c[i][0]}}</h3></td>
+          <td><h3>{{c[i][1]}}</h3></td>
+          <td><h3>{{c[i][2]}}</h3></td>
+          <td><h3>{{c[i][3]}}</h3></td>
+	  <td><h3>{{c[i][4]}}</h3></td>
+        </tr>
+        {% endfor %}
+      </thead>
+    </table>
+  </div>
+  
+
+</body>
+</html>
